@@ -1,0 +1,243 @@
+[gd_scene load_steps=19 format=3 uid="uid://booywxpabr63f"]
+
+[ext_resource type="Script" uid="uid://pdeh1kdytou6" path="res://scripts/Home/Home_nav.gd" id="1_b02wa"]
+[ext_resource type="Texture2D" uid="uid://be16rrgoo635c" path="res://sprites/Home_Screen/Mid_line.png" id="1_lapbl"]
+[ext_resource type="VideoStream" uid="uid://d0m0urctw6564" path="res://sprites/Home_Screen/Game_Background_Animated_Video_Generation.ogv" id="2_b02wa"]
+[ext_resource type="Texture2D" uid="uid://dytyuycr4psmc" path="res://sprites/Home_Screen/EXIT.png" id="2_ujmiq"]
+[ext_resource type="Script" uid="uid://cfi8ynfe6lb" path="res://scripts/Home/fade_animation.gd" id="3_15ihl"]
+[ext_resource type="Shader" uid="uid://cy76ks2wkqc50" path="res://scenes/home_screen.gdshader" id="3_airqx"]
+[ext_resource type="Texture2D" uid="uid://co5tsve54ijyn" path="res://sprites/Home_Screen/Setting.png" id="4_airqx"]
+[ext_resource type="Texture2D" uid="uid://78au5kmmtm8x" path="res://sprites/Home_Screen/Intro_logo.png" id="6_ked1l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_15ihl"]
+shader = ExtResource("3_airqx")
+shader_parameter/blur_amount = 2.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3gk3"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dc7ax"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14uot"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qdbj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i7sm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5fjw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hukxe"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7v8x"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 0.16078432)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7hc1p"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.16078432)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+
+[node name="Home_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b02wa")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+scale = Vector2(1.6, 1.6)
+stream = ExtResource("2_b02wa")
+loop = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_15ihl")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Mid_line" type="Sprite2D" parent="."]
+position = Vector2(961.00006, 559)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("1_lapbl")
+
+[node name="Start_Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.5
+offset_top = -51.0
+offset_right = 305.5
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m3gk3")
+
+[node name="Start_Label" type="Label" parent="Start_Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.0
+offset_right = 51.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 33
+text = "START     GAME"
+
+[node name="TTB_Label" type="Label" parent="Start_Panel"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.0
+offset_top = -34.0
+offset_right = 87.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "TAP TO BEGIN"
+script = ExtResource("3_15ihl")
+
+[node name="Start_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dc7ax")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14uot")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0qdbj")
+
+[node name="User_Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -289.0
+offset_top = -126.0
+offset_right = 289.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2i7sm")
+
+[node name="User_Label" type="Label" parent="User_Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -108.0
+offset_right = 108.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "User: tor***324@gmail.com"
+
+[node name="Navigation_Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = -294.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5fjw")
+
+[node name="Setting_Button" type="Button" parent="Navigation_Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -49.5
+offset_top = -106.0
+offset_right = 49.5
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hukxe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a7v8x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7hc1p")
+icon = ExtResource("4_airqx")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Exit_Button" type="Button" parent="Navigation_Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -49.5
+offset_top = 73.0
+offset_right = 49.5
+offset_bottom = 163.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_hukxe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a7v8x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7hc1p")
+icon = ExtResource("2_ujmiq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Fadeground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11119685, 0.11119684, 0.11119684, 1)
+
+[node name="logo" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(934, 539)
+texture = ExtResource("6_ked1l")
+
+[connection signal="pressed" from="Start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Navigation_Panel/Setting_Button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="Navigation_Panel/Exit_Button" to="." method="_on_exit_button_pressed"]

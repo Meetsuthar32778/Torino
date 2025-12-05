@@ -1,0 +1,196 @@
+[gd_scene load_steps=13 format=3 uid="uid://b407s22d668gn"]
+
+[ext_resource type="Script" uid="uid://cp25ut6d1fvyy" path="res://scripts/Setting/Setting.gd" id="1_u58eq"]
+[ext_resource type="Texture2D" uid="uid://dxafe3273evjp" path="res://sprites/Setting_Screen/pixil-frame-0 (5).png" id="2_7k1fe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31ui4"]
+content_margin_left = 100.0
+content_margin_top = 24.0
+content_margin_bottom = 24.0
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_scrng"]
+bg_color = Color(0.29803923, 0.29803923, 0.29803923, 0.5058824)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7k1fe"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u58eq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8tsb"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikx14"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50131"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rawaq"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8iqn7"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqguh"]
+content_margin_left = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[node name="Setting" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u58eq")
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 124.0
+grow_horizontal = 2
+
+[node name="Setting_label" type="Label" parent="Panel3"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -51.5
+offset_right = 459.0
+offset_bottom = 51.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_31ui4")
+text = "Setting / Controls"
+
+[node name="Back button" type="Button" parent="Panel3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -35.0
+offset_right = -32.0
+offset_bottom = 35.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_scrng")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7k1fe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u58eq")
+icon = ExtResource("2_7k1fe")
+expand_icon = true
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = 124.0
+offset_right = 314.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Control_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_o8tsb")
+text = "Controls"
+alignment = 0
+
+[node name="Graphic_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_ikx14")
+text = "Graphic"
+alignment = 0
+
+[node name="Audio_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_50131")
+text = "Audio"
+alignment = 0
+
+[node name="Account_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_rawaq")
+text = "Account"
+alignment = 0
+
+[node name="Key_Bind_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_8iqn7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_bqguh")
+text = "Key Bindings"
+alignment = 0
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1606.0
+offset_top = 124.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[connection signal="pressed" from="Panel3/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Control_button" to="." method="_on_control_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Graphic_button" to="." method="_on_graphic_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Audio_button" to="." method="_on_audio_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Account_button" to="." method="_on_account_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Key_Bind_button" to="." method="_on_key_bind_button_pressed"]
