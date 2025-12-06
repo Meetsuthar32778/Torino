@@ -1,5 +1,3 @@
-res://scenes/home_screen.gdshader
-res://scenes/home_screen.tscn
 res://scenes/setting.tscn
-res://scripts/Home/Home_nav.gd
+res://scenes/home_screen.gdshader
 res://scripts/Setting/Setting.gd

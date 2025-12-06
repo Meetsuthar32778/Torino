@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://b407s22d668gn"]
+[gd_scene load_steps=29 format=3 uid="uid://b407s22d668gn"]
 
 [ext_resource type="Script" uid="uid://cp25ut6d1fvyy" path="res://scripts/Setting/Setting.gd" id="1_u58eq"]
 [ext_resource type="Texture2D" uid="uid://dxafe3273evjp" path="res://sprites/Setting_Screen/pixil-frame-0 (5).png" id="2_7k1fe"]
+[ext_resource type="Texture2D" uid="uid://co5tsve54ijyn" path="res://sprites/Home_Screen/Setting.png" id="3_7k1fe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31ui4"]
 content_margin_left = 100.0
@@ -36,40 +37,126 @@ corner_radius_top_right = 35
 corner_radius_bottom_right = 35
 corner_radius_bottom_left = 35
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjk27"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sj267"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_be801"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8tsb"]
-content_margin_left = 10.0
+content_margin_left = 15.0
 bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1s23a"]
+content_margin_left = 25.0
+bg_color = Color(0.6, 0.6, 0.6, 0.53333336)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k45vp"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adqxb"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikx14"]
-content_margin_left = 10.0
+content_margin_left = 15.0
 bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_masab"]
+content_margin_left = 25.0
+bg_color = Color(0.6, 0.6, 0.6, 0.53333336)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yrx87"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jnidh"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50131"]
-content_margin_left = 10.0
+content_margin_left = 15.0
 bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gdp5f"]
+content_margin_left = 25.0
+bg_color = Color(0.6, 0.6, 0.6, 0.53333336)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_admcc"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kytot"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rawaq"]
-content_margin_left = 10.0
+content_margin_left = 15.0
 bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fextp"]
+content_margin_left = 25.0
+bg_color = Color(0.6, 0.6, 0.6, 0.53333336)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s2h46"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3o1ji"]
+content_margin_left = 15.0
+bg_color = Color(0.6, 0.6, 0.6, 0.29803923)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8iqn7"]
-content_margin_left = 10.0
+content_margin_left = 15.0
 bg_color = Color(0.6, 0.6, 0.6, 0.14509805)
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqguh"]
-content_margin_left = 10.0
-bg_color = Color(0.6, 0.6, 0.6, 0)
-draw_center = false
+content_margin_left = 25.0
+bg_color = Color(0.6, 0.6, 0.6, 0.53333336)
 border_color = Color(1, 1, 1, 1)
 border_blend = true
 corner_radius_top_left = 16
@@ -123,6 +210,10 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_u58eq")
 icon = ExtResource("2_7k1fe")
 expand_icon = true
 
+[node name="Setting_icon" type="Sprite2D" parent="Panel3"]
+position = Vector2(52, 63)
+texture = ExtResource("3_7k1fe")
+
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 9
@@ -131,7 +222,7 @@ offset_top = 124.0
 offset_right = 314.0
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="VBoxContainer" type="ItemList" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -139,39 +230,67 @@ anchor_bottom = 1.0
 offset_left = 43.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 20
+theme_override_styles/panel = SubResource("StyleBoxFlat_hjk27")
 
 [node name="Control_button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_right = 261.0
+offset_bottom = 42.0
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_sj267")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_be801")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o8tsb")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1s23a")
 text = "Controls"
 alignment = 0
 
 [node name="Graphic_button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_top = 70.0
+offset_right = 261.0
+offset_bottom = 112.0
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_k45vp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_adqxb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ikx14")
+theme_override_styles/focus = SubResource("StyleBoxFlat_masab")
 text = "Graphic"
 alignment = 0
 
 [node name="Audio_button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_top = 140.0
+offset_right = 261.0
+offset_bottom = 182.0
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_yrx87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jnidh")
 theme_override_styles/hover = SubResource("StyleBoxFlat_50131")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gdp5f")
 text = "Audio"
 alignment = 0
 
 [node name="Account_button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_top = 210.0
+offset_right = 261.0
+offset_bottom = 252.0
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_admcc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kytot")
 theme_override_styles/hover = SubResource("StyleBoxFlat_rawaq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fextp")
 text = "Account"
 alignment = 0
 
 [node name="Key_Bind_button" type="Button" parent="Panel/VBoxContainer"]
-layout_mode = 2
+layout_mode = 0
+offset_top = 280.0
+offset_right = 261.0
+offset_bottom = 322.0
 theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_s2h46")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3o1ji")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8iqn7")
 theme_override_styles/focus = SubResource("StyleBoxFlat_bqguh")
 text = "Key Bindings"
@@ -187,6 +306,80 @@ offset_left = -1606.0
 offset_top = 124.0
 grow_horizontal = 0
 grow_vertical = 2
+
+[node name="Control_container" type="ItemList" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/Control_container"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Control container"
+
+[node name="Graphic_container" type="ItemList" parent="Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container"]
+layout_mode = 0
+offset_right = 1606.0
+offset_bottom = 23.0
+text = "Graphic container"
+
+[node name="Audio_Container" type="ItemList" parent="Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container"]
+layout_mode = 0
+offset_right = 1606.0
+offset_bottom = 23.0
+text = "Audio Container"
+
+[node name="Account_Container" type="ItemList" parent="Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/Account_Container"]
+layout_mode = 0
+offset_right = 1606.0
+offset_bottom = 23.0
+text = "Account Container"
+
+[node name="Key_Bind_Container" type="ItemList" parent="Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2/Key_Bind_Container"]
+layout_mode = 0
+offset_right = 1606.0
+offset_bottom = 23.0
+text = "Key Binding Container"
 
 [connection signal="pressed" from="Panel3/Back button" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Control_button" to="." method="_on_control_button_pressed"]
