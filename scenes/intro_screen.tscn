@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://m0ifcoax3fwa"]
+
+[ext_resource type="Script" uid="uid://cgrla4m5ueroy" path="res://scripts/Intro/intro.gd" id="1_m3gk3"]
+[ext_resource type="Texture2D" uid="uid://78au5kmmtm8x" path="res://sprites/Home_Screen/Intro_logo.png" id="2_q1oon"]
+
+[node name="IntroScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m3gk3")
+
+[node name="Fadeground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11119685, 0.11119684, 0.11119684, 1)
+
+[node name="logo" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(934, 539)
+texture = ExtResource("2_q1oon")

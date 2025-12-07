@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b407s22d668gn"]
+[gd_scene load_steps=51 format=3 uid="uid://b407s22d668gn"]
 
 [ext_resource type="Script" uid="uid://cp25ut6d1fvyy" path="res://scripts/Setting/Setting.gd" id="1_u58eq"]
 [ext_resource type="Texture2D" uid="uid://dxafe3273evjp" path="res://sprites/Setting_Screen/pixil-frame-0 (5).png" id="2_7k1fe"]
@@ -37,7 +37,17 @@ corner_radius_top_right = 35
 corner_radius_bottom_right = 35
 corner_radius_bottom_left = 35
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hy1p6"]
+content_margin_left = 10.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.60784316)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjk27"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imavx"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_osqsf"]
 draw_center = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sj267"]
@@ -162,6 +172,97 @@ border_blend = true
 corner_radius_top_left = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfx8a"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afgnd"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_by7su"]
+bg_color = Color(0.11372549, 0.11372549, 0.11372549, 0.39215687)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17dfi"]
+bg_color = Color(0.11372549, 0.11372549, 0.11372549, 0.39215687)
+draw_center = false
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5awue"]
+bg_color = Color(0.6, 0.6, 0.6, 0.08627451)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sm8ao"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53m6p"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pv376"]
+content_margin_left = 10.0
+bg_color = Color(0.056291647, 0.056291588, 0.056291573, 0.24313726)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i45ge"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcke0"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcf5d"]
+bg_color = Color(0.11372549, 0.11372549, 0.11372549, 0.39215687)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3c2ih"]
+bg_color = Color(0.11372549, 0.11372549, 0.11372549, 0.39215687)
+draw_center = false
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ky7mk"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hkr10"]
+bg_color = Color(0.6, 0.6, 0.6, 0.37254903)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_he48y"]
+bg_color = Color(0.6, 0.6, 0.6, 0.08627451)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36o5k"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfshy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4opod"]
+bg_color = Color(0.6, 0.6, 0.6, 0.08627451)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yddkp"]
+draw_center = false
+
 [node name="Setting" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -175,7 +276,7 @@ script = ExtResource("1_u58eq")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 124.0
+offset_bottom = 70.0
 grow_horizontal = 2
 
 [node name="Setting_label" type="Label" parent="Panel3"]
@@ -198,12 +299,12 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -102.0
-offset_top = -35.0
-offset_right = -32.0
-offset_bottom = 35.0
+offset_left = -70.0
+offset_top = -25.0
+offset_bottom = 45.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.7, 0.7)
 theme_override_styles/normal = SubResource("StyleBoxFlat_scrng")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7k1fe")
 theme_override_styles/hover = SubResource("StyleBoxFlat_u58eq")
@@ -211,16 +312,17 @@ icon = ExtResource("2_7k1fe")
 expand_icon = true
 
 [node name="Setting_icon" type="Sprite2D" parent="Panel3"]
-position = Vector2(52, 63)
+position = Vector2(38, 35)
 texture = ExtResource("3_7k1fe")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
-offset_top = 124.0
+offset_top = 70.0
 offset_right = 314.0
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hy1p6")
 
 [node name="VBoxContainer" type="ItemList" parent="Panel"]
 layout_mode = 1
@@ -231,11 +333,14 @@ offset_left = 43.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_hjk27")
+theme_override_styles/focus = SubResource("StyleBoxFlat_imavx")
+theme_override_styles/selected = SubResource("StyleBoxFlat_osqsf")
 
 [node name="Control_button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 0
+offset_top = 10.0
 offset_right = 261.0
-offset_bottom = 42.0
+offset_bottom = 52.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_sj267")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_be801")
@@ -246,9 +351,9 @@ alignment = 0
 
 [node name="Graphic_button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 0
-offset_top = 70.0
+offset_top = 80.0
 offset_right = 261.0
-offset_bottom = 112.0
+offset_bottom = 122.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_k45vp")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_adqxb")
@@ -259,9 +364,9 @@ alignment = 0
 
 [node name="Audio_button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 0
-offset_top = 140.0
+offset_top = 150.0
 offset_right = 261.0
-offset_bottom = 182.0
+offset_bottom = 192.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_yrx87")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jnidh")
@@ -272,9 +377,9 @@ alignment = 0
 
 [node name="Account_button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 0
-offset_top = 210.0
+offset_top = 220.0
 offset_right = 261.0
-offset_bottom = 252.0
+offset_bottom = 262.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_admcc")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_kytot")
@@ -285,9 +390,9 @@ alignment = 0
 
 [node name="Key_Bind_button" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 0
-offset_top = 280.0
+offset_top = 290.0
 offset_right = 261.0
-offset_bottom = 322.0
+offset_bottom = 332.0
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_s2h46")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_3o1ji")
@@ -303,7 +408,7 @@ anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -1606.0
-offset_top = 124.0
+offset_top = 70.0
 grow_horizontal = 0
 grow_vertical = 2
 
@@ -314,12 +419,271 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dfx8a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_afgnd")
 
-[node name="Label" type="Label" parent="Panel2/Control_container"]
+[node name="ItemList" type="ItemList" parent="Panel2/Control_container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -16.0
+offset_bottom = 230.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Control container"
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Controls"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Control_container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Control type"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Control_container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Toucescreen"
+popup/item_0/id = 0
+popup/item_1/text = "Keyboard"
+popup/item_1/id = 1
+popup/item_2/text = "Controller"
+popup/item_2/id = 2
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Control_container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 246.0
+offset_right = -16.0
+offset_bottom = 630.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList2"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Camera"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Control_container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 128.0
+offset_right = -72.0
+offset_bottom = 228.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Horizontal Camera Sensitivity"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Control_container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -341.0
+offset_top = -16.0
+offset_right = -195.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Control_container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 331.5
+offset_top = -17.0
+offset_right = 372.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Control_container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 244.0
+offset_right = -72.0
+offset_bottom = 344.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Vertical Camera Sensitivity"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Control_container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -341.0
+offset_top = -16.0
+offset_right = -195.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Control_container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 331.5
+offset_top = -17.0
+offset_right = 372.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
+
+[node name="ItemList3" type="ItemList" parent="Panel2/Control_container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 646.0
+offset_right = -16.0
+offset_bottom = 876.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList3"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Gyroscope"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Control_container/ItemList3"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Control_container/ItemList3/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Gyro Movement"
+
+[node name="HSlider" type="CheckButton" parent="Panel2/Control_container/ItemList3/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -182.99915
+offset_top = -36.0
+offset_right = -138.99915
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(3, 3)
 
 [node name="Graphic_container" type="ItemList" parent="Panel2"]
 visible = false
@@ -344,12 +708,273 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i45ge")
+theme_override_styles/focus = SubResource("StyleBoxFlat_dcke0")
 
-[node name="Label" type="Label" parent="Panel2/Audio_Container"]
+[node name="ItemList" type="ItemList" parent="Panel2/Audio_Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -16.0
+offset_bottom = 230.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList"]
 layout_mode = 0
-offset_right = 1606.0
-offset_bottom = 23.0
-text = "Audio Container"
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Audio Setting"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Audio_Container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Music Volume"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Audio_Container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -16.0
+offset_right = -171.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Audio_Container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 355.5
+offset_top = -17.0
+offset_right = 396.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Audio_Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 246.0
+offset_right = -16.0
+offset_bottom = 726.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rcf5d")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3c2ih")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList2"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 189.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Audio Balance"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Audio_Container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ky7mk")
+theme_override_styles/hovered = SubResource("StyleBoxFlat_hkr10")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Music Volume"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Audio_Container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -16.0
+offset_right = -171.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 355.5
+offset_top = -17.0
+offset_right = 396.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Audio_Container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 204.0
+offset_right = -72.0
+offset_bottom = 304.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_he48y")
+theme_override_styles/focus = SubResource("StyleBoxFlat_36o5k")
+theme_override_styles/hovered = SubResource("StyleBoxFlat_bfshy")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Dialogue Volume"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Audio_Container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -16.0
+offset_right = -171.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 355.5
+offset_top = -17.0
+offset_right = 396.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
+
+[node name="ItemList3" type="ItemList" parent="Panel2/Audio_Container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 320.0
+offset_right = -72.0
+offset_bottom = 420.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4opod")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yddkp")
+
+[node name="Label" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList3"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Sound Volume"
+
+[node name="HSlider" type="HSlider" parent="Panel2/Audio_Container/ItemList2/ItemList3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -16.0
+offset_right = -171.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Label2" type="Label" parent="Panel2/Audio_Container/ItemList2/ItemList3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 355.5
+offset_top = -17.0
+offset_right = 396.5
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "100"
 
 [node name="Account_Container" type="ItemList" parent="Panel2"]
 visible = false
