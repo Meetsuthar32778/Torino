@@ -1,20 +1,23 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765090887
+::res://::1765193372
 default_bus_layout.tres::AudioBusLayout::4927819243956186886::1765088022::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1764953331::0::1::::<><><>0<>0<><>::
 ::res://audio/::1764507161
 ::res://globals/::1764507213
 ::res://resources/::1764507202
-::res://scenes/::1765089701
-home_screen.gdshader::Shader::6525334775687298237::1765087698::0::1::::<><><>0<>0<><>::
-home_screen.tscn::PackedScene::3399463509685854993::1764954661::0::1::::<><><>0<>0<><>::uid://pdeh1kdytou6::::res://scripts/Home/Home_nav.gd<>uid://be16rrgoo635c::::res://sprites/Home_Screen/Mid_line.png<>uid://d0m0urctw6564::::res://sprites/Home_Screen/Game_Background_Animated_Video_Generation.ogv<>uid://dytyuycr4psmc::::res://sprites/Home_Screen/EXIT.png<>uid://cfi8ynfe6lb::::res://scripts/Home/fade_animation.gd<>uid://cy76ks2wkqc50::::res://scenes/home_screen.gdshader<>uid://co5tsve54ijyn::::res://sprites/Home_Screen/Setting.png<>uid://78au5kmmtm8x::::res://sprites/Home_Screen/Intro_logo.png
-setting.tscn::PackedScene::4475483141125512165::1765089701::0::1::::<><><>0<>0<><>::uid://cp25ut6d1fvyy::::res://scripts/Setting/Setting.gd<>uid://dxafe3273evjp::::res://sprites/Setting_Screen/pixil-frame-0 (5).png<>uid://co5tsve54ijyn::::res://sprites/Home_Screen/Setting.png
-::res://scripts/::1764949604
-::res://scripts/Home/::1764954662
+::res://scenes/::1765111422
+home_screen.gdshader::Shader::6525334775687298237::1765092098::0::1::::<><><>0<>0<><>::
+home_screen.tscn::PackedScene::3399463509685854993::1765093812::0::1::::<><><>0<>0<><>::uid://pdeh1kdytou6::::res://scripts/Home/Home_nav.gd<>uid://be16rrgoo635c::::res://sprites/Home_Screen/Mid_line.png<>uid://d0m0urctw6564::::res://sprites/Home_Screen/Game_Background_Animated_Video_Generation.ogv<>uid://dytyuycr4psmc::::res://sprites/Home_Screen/EXIT.png<>uid://cfi8ynfe6lb::::res://scripts/Home/fade_animation.gd<>uid://cy76ks2wkqc50::::res://scenes/home_screen.gdshader<>uid://co5tsve54ijyn::::res://sprites/Home_Screen/Setting.png
+intro_screen.tscn::PackedScene::894370359125344080::1765093638::0::1::::<><><>0<>0<><>::uid://cgrla4m5ueroy::::res://scripts/Intro/intro.gd<>uid://78au5kmmtm8x::::res://sprites/Home_Screen/Intro_logo.png
+setting.tscn::PackedScene::4475483141125512165::1765111422::0::1::::<><><>0<>0<><>::uid://cp25ut6d1fvyy::::res://scripts/Setting/Setting.gd<>uid://dxafe3273evjp::::res://sprites/Setting_Screen/pixil-frame-0 (5).png<>uid://co5tsve54ijyn::::res://sprites/Home_Screen/Setting.png
+::res://scripts/::1765093512
+::res://scripts/Home/::1765095314
 fade_animation.gd::GDScript::4448397766587395::1764914611::0::1::::<>Node<><>0<>0<><>::
-Home_nav.gd::GDScript::1059282537585355127::1764954662::0::1::::<>Node<><>0<>0<><>::
-::res://scripts/Setting/::1765089153
-Setting.gd::GDScript::5883270492981255940::1765089153::0::1::::<>Node<><>0<>0<><>::
+Home_nav.gd::GDScript::1059282537585355127::1765095314::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/Intro/::1765093709
+intro.gd::GDScript::5229738281058617688::1765093709::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/Setting/::1765111196
+Setting.gd::GDScript::5883270492981255940::1765111196::0::1::::<>Node<><>0<>0<><>::
 ::res://shaders/::1764507181
 ::res://sprites/::1764949351
 ::res://sprites/Home_Screen/::1764946194

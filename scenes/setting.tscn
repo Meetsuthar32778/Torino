@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://b407s22d668gn"]
+[gd_scene load_steps=55 format=3 uid="uid://b407s22d668gn"]
 
 [ext_resource type="Script" uid="uid://cp25ut6d1fvyy" path="res://scripts/Setting/Setting.gd" id="1_u58eq"]
 [ext_resource type="Texture2D" uid="uid://dxafe3273evjp" path="res://sprites/Setting_Screen/pixil-frame-0 (5).png" id="2_7k1fe"]
@@ -214,6 +214,12 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1iw4"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nidkj"]
+draw_center = false
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i45ge"]
 draw_center = false
 
@@ -261,6 +267,12 @@ corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yddkp"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g133q"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efk8o"]
 draw_center = false
 
 [node name="Setting" type="Control"]
@@ -413,6 +425,7 @@ grow_horizontal = 0
 grow_vertical = 2
 
 [node name="Control_container" type="ItemList" parent="Panel2"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -693,12 +706,227 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v1iw4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nidkj")
 
-[node name="Label" type="Label" parent="Panel2/Graphic_container"]
+[node name="ItemList" type="ItemList" parent="Panel2/Graphic_container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -16.0
+offset_bottom = 578.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container/ItemList"]
 layout_mode = 0
-offset_right = 1606.0
-offset_bottom = 23.0
-text = "Graphic container"
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Video"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Graphic_container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Display Mode"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Graphic_container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Fullscreen Windowed"
+popup/item_2/id = 2
+
+[node name="ItemList4" type="ItemList" parent="Panel2/Graphic_container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 204.0
+offset_right = -72.0
+offset_bottom = 304.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container/ItemList/ItemList4"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Resolution"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Graphic_container/ItemList/ItemList4"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 4
+popup/item_0/text = "1920 X 1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600 X 900"
+popup/item_1/id = 1
+popup/item_2/text = "1366 X 768"
+popup/item_2/id = 2
+popup/item_3/text = "1280 X 720"
+popup/item_3/id = 3
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Graphic_container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 320.0
+offset_right = -72.0
+offset_bottom = 420.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container/ItemList/ItemList2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Refresh Rate"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Graphic_container/ItemList/ItemList2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 5
+popup/item_0/text = "30 HZ"
+popup/item_0/id = 0
+popup/item_1/text = "45 HZ"
+popup/item_1/id = 1
+popup/item_2/text = "60 HZ"
+popup/item_2/id = 2
+popup/item_3/text = "90 HZ"
+popup/item_3/id = 3
+popup/item_4/text = "120 HZ"
+popup/item_4/id = 4
+
+[node name="ItemList3" type="ItemList" parent="Panel2/Graphic_container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 436.0
+offset_right = -72.0
+offset_bottom = 536.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Graphic_container/ItemList/ItemList3"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "V Sync "
+
+[node name="HSlider" type="CheckButton" parent="Panel2/Graphic_container/ItemList/ItemList3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -182.99915
+offset_top = -36.0
+offset_right = -138.99915
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(3, 3)
 
 [node name="Audio_Container" type="ItemList" parent="Panel2"]
 visible = false
@@ -992,19 +1220,155 @@ offset_bottom = 23.0
 text = "Account Container"
 
 [node name="Key_Bind_Container" type="ItemList" parent="Panel2"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g133q")
+theme_override_styles/focus = SubResource("StyleBoxFlat_efk8o")
 
-[node name="Label" type="Label" parent="Panel2/Key_Bind_Container"]
+[node name="ItemList" type="ItemList" parent="Panel2/Key_Bind_Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = -16.0
+offset_bottom = 230.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Key_Bind_Container/ItemList"]
 layout_mode = 0
-offset_right = 1606.0
-offset_bottom = 23.0
-text = "Key Binding Container"
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Keyboard "
+
+[node name="ItemList" type="ItemList" parent="Panel2/Key_Bind_Container/ItemList"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Key_Bind_Container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Flap"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Key_Bind_Container/ItemList/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Toucescreen"
+popup/item_0/id = 0
+popup/item_1/text = "Keyboard"
+popup/item_1/id = 1
+popup/item_2/text = "Controller"
+popup/item_2/id = 2
+
+[node name="ItemList2" type="ItemList" parent="Panel2/Key_Bind_Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 246.0
+offset_right = -16.0
+offset_bottom = 476.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_by7su")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17dfi")
+
+[node name="Label" type="Label" parent="Panel2/Key_Bind_Container/ItemList2"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 178.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "Controller"
+
+[node name="ItemList" type="ItemList" parent="Panel2/Key_Bind_Container/ItemList2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 72.0
+offset_top = 88.0
+offset_right = -72.0
+offset_bottom = 188.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5awue")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sm8ao")
+
+[node name="Label" type="Label" parent="Panel2/Key_Bind_Container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -17.0
+offset_right = 203.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_53m6p")
+text = "Flap"
+
+[node name="HSlider" type="OptionButton" parent="Panel2/Key_Bind_Container/ItemList2/ItemList"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -293.99988
+offset_top = -17.000015
+offset_right = -73.0
+offset_bottom = 16.999985
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv376")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Toucescreen"
+popup/item_0/id = 0
+popup/item_1/text = "Keyboard"
+popup/item_1/id = 1
+popup/item_2/text = "Controller"
+popup/item_2/id = 2
 
 [connection signal="pressed" from="Panel3/Back button" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Control_button" to="." method="_on_control_button_pressed"]
